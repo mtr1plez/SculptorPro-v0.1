@@ -1,0 +1,29 @@
+# --- Core & Utils ---
+numpy
+tqdm            # Прогресс-бары
+pyyaml          # Чтение конфигов
+python-dotenv   # Работа с .env
+click           # Для CLI (используется внутри scenedetect)
+
+# --- Video Processing ---
+opencv-python   # Работа с кадрами
+scenedetect[opencv] # Определение сцен
+moviepy         # Для извлечения аудио
+
+# --- AI & ML ---
+torch 
+torchvision # PyTorch (основа)
+# CLIP (OpenAI) - лучше ставить через git, но для requirements:
+git+https://github.com/openai/CLIP.git
+ftfy
+regex
+
+# Face Recognition
+insightface     # Лучшая библиотека для лиц
+onnxruntime     # Движок для insightface (на маке можно onnxruntime-silicon, но обычный тоже ок)
+scikit-learn   # Для кластеризации лиц
+# Audio AI
+openai-whisper  # Транскрибация
+
+# Google Gemini API
+google-generativeai
